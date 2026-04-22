@@ -55,7 +55,7 @@ Para cambiar las animaciones de manera suave, presiona las siguientes teclas:
 
 * 3 - Dancing
 
-* 4 - Punching Bag
+* 4 - Punching Bag 
 
 * 5 - Fall Flat
 
