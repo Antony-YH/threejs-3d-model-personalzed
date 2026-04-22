@@ -16,7 +16,7 @@ const params = { asset: 'Brooklyn Uprock' };
 
 const assets = [
     'Brooklyn Uprock',
-    'Kettlebell swing',
+    'Kettlebell Swing',
     'Dancing',
     'Punching Bag',
     'Fall Flat'
@@ -24,7 +24,7 @@ const assets = [
 
 const keysMap = {
     '1': { name: 'Brooklyn Uprock', uiId: 'ui-anim-1' },
-    '2': { name: 'Kettlebell swing', uiId: 'ui-anim-2' },
+    '2': { name: 'Kettlebell Swing', uiId: 'ui-anim-2' },
     '3': { name: 'Dancing', uiId: 'ui-anim-3' },
     '4': { name: 'Punching Bag', uiId: 'ui-anim-4' },
     '5': { name: 'Fall Flat', uiId: 'ui-anim-5' }
