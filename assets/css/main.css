@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    /* Fondo gris medio tipo estudio fotográfico (más claro en el centro) */
+    background: radial-gradient(circle at 50% 50%, #777777 0%, #444444 100%);
+    color: #0f172a;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    overscroll-behavior: none;
+}
+
+/* Paneles translúcidos oscuros ajustados para resaltar sobre el fondo gris */
+.glass-panel {
+    background: rgba(0, 0, 0, 0.75) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+
+.navbar-floating {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1200px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.footer-floating {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    max-width: 1200px;
+    padding: 12px;
+    text-align: center;
+    z-index: 10;
+}
+
+.controls-card {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    padding: 25px;
+    z-index: 10;
+    min-width: 250px;
+}
+
+.controls-card h5 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #38bdf8;
+}
+
+.anim-item {
+    transition: all 0.3s ease;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    color: #f8fafc; /* Texto blanco en el panel oscuro */
+}
+
+.anim-item.active {
+    background: rgba(56, 189, 248, 0.25);
+    border-left: 4px solid #38bdf8;
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+kbd {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-right: 12px;
+    font-family: monospace;
+    transition: all 0.2s ease;
+}
+
+.anim-item.active kbd {
+    background-color: #38bdf8;
+    color: #0f172a;
+    border-color: #38bdf8;
+}
+
+.lil-gui {
+    z-index: 15 !important;
+    top: 100px !important; 
+    right: 20px !important;
+    --background-color: rgba(0, 0, 0, 0.85);
+    --text-color: #f8fafc;
+    --title-background-color: rgba(0, 0, 0, 0.9);
+    --widget-color: rgba(255, 255, 255, 0.1);
+    --hover-color: rgba(255, 255, 255, 0.2);
+    --focus-color: #38bdf8;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
